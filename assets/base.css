@@ -3511,3 +3511,10 @@ details-disclosure > details {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
 }
+
+.product-form__submit {
+  background: #00b700;
+}
+.product-form__submit:hover {
+  background: #7AE5FF
+}
