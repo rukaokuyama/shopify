@@ -975,22 +975,8 @@ class VariantSelects extends HTMLElement {
       this.updateVariantInput();
       this.renderProductInfo();
       this.updateShareUrl();
-
-      //added line
-      this.updateVariantDetails(this.currentVariant);
     }
   }
-  //additional 
-  updateVariantDetails(currentVariant){
-    const variants = document.querySelectorAll('[data-variant-id]')
-  
-    variants.forEach( function(variant) {
-        variant.style.display = 'none';
-        if(variant.dataset.variantId == currentVariant.id){
-          variant.style.display = 'block'
-        }
-      });
-   }
 
   updateOptions() {
     this.options = Array.from(this.querySelectorAll('select'), (select) => select.value);
