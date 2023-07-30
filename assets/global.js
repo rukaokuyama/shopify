@@ -966,6 +966,7 @@ class VariantSelects extends HTMLElement {
     this.removeErrorMessage();
     this.updateVariantStatuses();
 
+
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
       this.setUnavailable();
@@ -975,6 +976,7 @@ class VariantSelects extends HTMLElement {
       this.updateVariantInput();
       this.renderProductInfo();
       this.updateShareUrl();
+
     }
   }
 
