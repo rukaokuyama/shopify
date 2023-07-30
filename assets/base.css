@@ -3518,3 +3518,7 @@ details-disclosure > details {
 .product-form__submit:hover {
   background: #7AE5FF
 }
+
+.variant__description {
+  display: none
+}
