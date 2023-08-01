@@ -1286,10 +1286,10 @@ button.shopify-payment-button__button--unbranded {
   transition: box-shadow var(--duration-short) ease;
 }
 
-.button:not([disabled]):hover::after,
+.button:disabled:after,
 .shopify-challenge__button:hover::after,
 .customer button:hover::after,
-.shopify-payment-button__button--unbranded:hover::after {
+.shopify-payment-button__button--unbranded:hover:enabled:after {
   --border-offset: 1.3px;
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
       rgba(var(--color-button-text), var(--border-opacity)),
@@ -3515,6 +3515,7 @@ details-disclosure > details {
 .product-form__submit {
   background: #00b700;
 }
-.product-form__submit:hover {
-  background: #7AE5FF
+
+.product-form__submit:hover:enabled {
+  background: #7AE5FF;
 }

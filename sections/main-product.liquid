@@ -181,7 +181,7 @@
               {%- if product.selected_or_first_available_variant.inventory_quantity == 0 -%}
               <p></p>
               {%- elsif product.selected_or_first_available_variant.inventory_quantity < 5 -%}
-                <p>LOW IN STOCK</p>
+                <p>LOW STOCK</p>
               {%- elsif product.selected_or_first_available_variant.inventory_quantity >= 5 -%}
                 <p>Available!</p>
               {%- endif -%}
