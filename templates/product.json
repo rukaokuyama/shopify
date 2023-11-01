@@ -150,11 +150,58 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "0b588877-893d-47bb-a933-7c57f25aa4a2": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--20247435870517__0b588877-893d-47bb-a933-7c57f25aa4a2-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.designers.value.name.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "template--20247435870517__0b588877-893d-47bb-a933-7c57f25aa4a2-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><\/p>{{ product.metafields.custom.designers.value.description | metafield_tag }}",
+            "text_style": "body"
+          }
+        },
+        "template--20247435870517__0b588877-893d-47bb-a933-7c57f25aa4a2-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--20247435870517__0b588877-893d-47bb-a933-7c57f25aa4a2-heading-1",
+        "template--20247435870517__0b588877-893d-47bb-a933-7c57f25aa4a2-text-1",
+        "template--20247435870517__0b588877-893d-47bb-a933-7c57f25aa4a2-button-1"
+      ],
+      "settings": {
+        "image": "{{ product.metafields.custom.designers.value.image.value }}",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "related-products",
-    "8f8f6b2a-2da6-4d5e-a5c6-237b688efe8d"
+    "8f8f6b2a-2da6-4d5e-a5c6-237b688efe8d",
+    "0b588877-893d-47bb-a933-7c57f25aa4a2"
   ]
 }
